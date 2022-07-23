@@ -11,7 +11,7 @@ public class DepotProxy implements IDepot {
   private static final int MAX_CACHE = 3;
   
   // Least Recently Used Cache
-  private Map<String, Image> images = new LinkedHashMap<String, Image>(MAX_CACHE+1, 1, true) {
+  private Map<String, Image> images = new LinkedHashMap<String, Image>(MAX_CACHE, 1, true) {
     /**
 	 * 
 	 */
